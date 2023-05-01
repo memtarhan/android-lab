@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -38,7 +39,18 @@ fun Greeting(name: String) {
         Column {
             Text(text = "Hi, my name is $name!")
             Text(text = "This is so awesome!")
+            Row {
+                Song(lyrics = "Hey you!")
+                Song(lyrics = "Hey you!")
+            }
         }
+    }
+}
+
+@Composable
+fun Song(lyrics: String) {
+    Column {
+        Text(text = lyrics)
     }
 }
 
