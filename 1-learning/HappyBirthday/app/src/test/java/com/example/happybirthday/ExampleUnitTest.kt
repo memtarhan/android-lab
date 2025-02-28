@@ -1,4 +1,4 @@
-package com.memtarhan.happybirthday
+package com.example.happybirthday
 
 import org.junit.Test
 
